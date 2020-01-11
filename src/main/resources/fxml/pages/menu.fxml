@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+
+<MenuBar prefHeight="32.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112"
+         xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.fer.zemris.dipl.controllers.MenuController">
+    <menus>
+        <Menu mnemonicParsing="false" text="File">
+            <items>
+                <Menu mnemonicParsing="false" text="New">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Simulation"
+                                  onAction="#switchToCreateNewSimulation"/>
+                        <MenuItem mnemonicParsing="false" text="Rule"
+                                  onAction="#switchToCreateNewRule"/>
+                        <MenuItem mnemonicParsing="false" text="Process"
+                                  onAction="#switchToCreateNewProcess"/>
+                    </items>
+                </Menu>
+                <MenuItem mnemonicParsing="false" text="Home" onAction="#switchToMain"/>
+            </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#switchToSimulations"
+                          text="Simulations..."/>
+                <MenuItem mnemonicParsing="false" onAction="#switchToRules" text="Rules..."/>
+                <MenuItem mnemonicParsing="false" onAction="#switchToProcesses"
+                          text="Processes..."/>
+            </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#showAboutScreen" text="About"/>
+            </items>
+        </Menu>
+    </menus>
+</MenuBar>

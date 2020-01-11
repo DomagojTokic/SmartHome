@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.fer.zemris.dipl.controllers.create.NewProcessController">
+    <TextField fx:id="processNameField" layoutX="14.0" layoutY="50.0" promptText="Process name" />
+    <Label fx:id="warningMessage" layoutX="211.0" layoutY="51.0" prefHeight="30.0" prefWidth="298.0" textFill="RED" />
+    <TextField fx:id="processDescField" layoutX="14.0" layoutY="88.0" promptText="Description" />
+    <Label layoutX="13.0" layoutY="7.0" text="Create new process">
+        <font>
+            <Font size="25.0" />
+        </font>
+    </Label>
+    <Label layoutX="18.0" layoutY="127.0" text="Appliance" />
+    <Label layoutX="18.0" layoutY="179.0" text="Action" />
+    <ChoiceBox fx:id="applianceChoiceBox" layoutX="19.0" layoutY="148.0" onAction="#setUpActionChoiceBox" prefWidth="150.0" />
+    <ChoiceBox fx:id="actionChoiceBox" layoutX="19.0" layoutY="200.0" onAction="#setValueField" prefWidth="150.0" />
+    <Label layoutX="176.0" layoutY="180.0" text="Value" />
+    <Pane fx:id="valuePane" layoutX="176.0" layoutY="201.0" prefHeight="31.0" prefWidth="103.0" />
+    <Button layoutX="279.0" layoutY="200.0" mnemonicParsing="false" onAction="#addAction" text="+" />
+    <TableView fx:id="actionTableView" editable="true" layoutX="20.0" layoutY="240.0" prefHeight="177.0" prefWidth="603.0">
+        <columns>
+            <TableColumn fx:id="numeroColumn" prefWidth="40.0" sortable="false" text="No." />
+            <TableColumn fx:id="actionColumn" prefWidth="379.0" text="Action" />
+            <TableColumn fx:id="valueColumn" editable="true" prefWidth="106.0" text="Value" />
+            <TableColumn fx:id="removeColumn" prefWidth="75.0" text="Remove" />
+        </columns>
+    </TableView>
+    <Button fx:id="backBtn" layoutX="26.0" layoutY="426.0" mnemonicParsing="false" onAction="#back" text="Back" />
+    <Button fx:id="createBtn" layoutX="94.0" layoutY="426.0" mnemonicParsing="false" onAction="#create" text="Create" />
+   <ChoiceBox fx:id="processChoiceBox" layoutX="436.0" layoutY="148.0" onAction="#setFieldsToExistingProcess" prefHeight="31.0" prefWidth="187.0" />
+   <Label layoutX="436.0" layoutY="127.0" text="Create from existing process" />
+</AnchorPane>

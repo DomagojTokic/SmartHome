@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="167.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/8.0.112"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label fx:id="sensorName" layoutX="13.0" text="Sensor name">
+            <font>
+                <Font name="System Bold" size="15.0"/>
+            </font>
+        </Label>
+        <Label layoutX="13.0" layoutY="27.0" text="Start value"/>
+        <Spinner fx:id="startValue" layoutX="13.0" layoutY="53.0"/>
+        <Label layoutX="237.0" layoutY="27.0" text="Weight value"/>
+        <Spinner fx:id="weightValue" layoutX="237.0" layoutY="53.0"/>
+        <Label layoutX="13.0" layoutY="94.0" text="Minimum value change"/>
+        <Spinner fx:id="minChange" layoutX="13.0" layoutY="124.0"/>
+        <Label layoutX="237.0" layoutY="94.0" text="Maximum value change"/>
+        <Spinner fx:id="maxChange" layoutX="237.0" layoutY="124.0"/>
+    </children>
+</AnchorPane>

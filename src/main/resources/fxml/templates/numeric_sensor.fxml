@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="57.0" prefWidth="348.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label fx:id="measurementName" layoutX="6.0" layoutY="17.0" text="Measurement">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+      <TextField fx:id="currentValue" editable="false" layoutX="126.0" layoutY="12.0" prefHeight="31.0" prefWidth="75.0" />
+      <Spinner fx:id="newValue" layoutX="241.0" layoutY="12.0" prefHeight="31.0" prefWidth="98.0" />
+      <Label fx:id="unit" layoutX="205.0" layoutY="18.0" text="L" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.fer.zemris.dipl.controllers.SimulationViewController">
+    <children>
+        <Label fx:id="simulationName" layoutX="14.0" layoutY="6.0" text="Simulation name">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <TableView fx:id="sensorTableView" layoutX="14.0" layoutY="42.0" prefHeight="162.0" prefWidth="287.0">
+            <columns>
+                <TableColumn fx:id="sensorNameColumn" prefWidth="285.0" text="Sensors" />
+            </columns>
+        </TableView>
+        <TableView fx:id="applianceTableView" layoutX="320.0" layoutY="42.0" prefHeight="162.0" prefWidth="300.0">
+            <columns>
+                <TableColumn fx:id="applianceNameColumn" prefWidth="297.0" text="Appliances" />
+            </columns>
+        </TableView>
+        <TableView fx:id="ruleProcessPairTableView" layoutX="15.0" layoutY="213.0" prefHeight="175.0" prefWidth="611.0">
+            <columns>
+                <TableColumn fx:id="ruleColumn" prefWidth="295.0" text="Rules" />
+                <TableColumn fx:id="processColumn" prefWidth="313.0" text="Process" />
+            </columns>
+        </TableView>
+        <Button layoutX="15.0" layoutY="408.0" mnemonicParsing="false" onAction="#back" text="Back" />
+        <Button layoutX="495.0" layoutY="396.0" mnemonicParsing="false" onAction="#switchToSimulationSensorAppliance" prefHeight="56.0" prefWidth="125.0" text="Set sensors and appliances" textAlignment="CENTER" wrapText="true" />
+        <Button layoutX="374.0" layoutY="395.0" mnemonicParsing="false" onAction="#switchToSimulationRuleProcess" prefHeight="56.0" prefWidth="112.0" text="Set rules and processes" textAlignment="CENTER" wrapText="true" />
+    </children>
+</AnchorPane>

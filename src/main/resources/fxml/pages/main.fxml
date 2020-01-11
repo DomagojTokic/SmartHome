@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.fer.zemris.dipl.controllers.MainPageController">
+   <children>
+      <Button onAction="#goToSimulations" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="123.0" prefWidth="241.0" text="Simulations" />
+      <Button onAction="#goToCreateProcess" layoutX="385.0" layoutY="281.0" mnemonicParsing="false" prefHeight="123.0" prefWidth="241.0" text="Create new process" />
+      <Button onAction="#goToCreateRule" layoutX="385.0" layoutY="147.0" mnemonicParsing="false" prefHeight="123.0" prefWidth="241.0" text="Create new rule" />
+      <Button onAction="#goToRules" layoutX="14.0" layoutY="147.0" mnemonicParsing="false" prefHeight="123.0" prefWidth="241.0" text="Rules" />
+      <Button onAction="#goToProcesses" layoutX="14.0" layoutY="281.0" mnemonicParsing="false" prefHeight="123.0" prefWidth="241.0" text="Processes" />
+      <Button onAction="#goToCreateSimulation" layoutX="385.0" layoutY="14.0" mnemonicParsing="false" prefHeight="123.0" prefWidth="241.0" text="Create new simulation" />
+   </children>
+</AnchorPane>

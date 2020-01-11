@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="511.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.fer.zemris.dipl.controllers.SimulationRunController">
+    <Label fx:id="simulationRunNameLabel" layoutX="15.0" layoutY="14.0" prefHeight="21.0" prefWidth="242.0" text="Run simulation">
+        <font>
+            <Font name="System Bold" size="20.0" />
+        </font>
+    </Label>
+    <ScrollPane layoutX="15.0" layoutY="202.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="230.0" prefWidth="350.0">
+        <content>
+            <VBox fx:id="sensorVBox" minHeight="0.0" minWidth="0.0" />
+        </content>
+    </ScrollPane>
+    <Button layoutX="14.0" layoutY="442.0" mnemonicParsing="false" onAction="#back" text="Back" />
+    <TextArea fx:id="processTextArea" editable="false" layoutX="14.0" layoutY="44.0" prefHeight="109.0" prefWidth="617.0" />
+    <Button layoutX="16.0" layoutY="161.0" mnemonicParsing="false" onAction="#startSimulation" text="Play" />
+    <Button layoutX="74.0" layoutY="161.0" mnemonicParsing="false" onAction="#pauseSimulation" text="Pause" />
+    <Button fx:id="setParametersButton" layoutX="143.0" layoutY="161.0" mnemonicParsing="false" onAction="#setParameters" prefHeight="31.0" prefWidth="125.0" text="Set Parameters" textAlignment="CENTER" />
+    <ScrollPane layoutX="372.0" layoutY="202.0" prefHeight="230.0" prefWidth="256.0">
+        <content>
+            <VBox fx:id="applianceVBox" minHeight="0.0" minWidth="0.0" />
+        </content>
+    </ScrollPane>
+   <Button layoutX="510.0" layoutY="442.0" mnemonicParsing="false" onAction="#end" text="End simulation" />
+</AnchorPane>

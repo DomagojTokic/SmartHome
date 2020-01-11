@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="57.0" prefWidth="348.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label fx:id="measurementName" layoutX="7.0" layoutY="17.0" text="Measurement">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="homeState" editable="false" layoutX="125.0" layoutY="12.0" prefHeight="31.0" prefWidth="98.0" />
+      <ChoiceBox fx:id="newState" layoutX="242.0" layoutY="12.0" />
+    </children>
+</AnchorPane>

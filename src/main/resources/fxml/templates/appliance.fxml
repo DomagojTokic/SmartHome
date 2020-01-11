@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="57.0" prefWidth="245.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label fx:id="applianceName" layoutX="14.0" layoutY="17.0" text="Appliance">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="homeState" editable="false" layoutX="169.0" layoutY="12.0" prefHeight="31.0" prefWidth="58.0" />
+    </children>
+</AnchorPane>
